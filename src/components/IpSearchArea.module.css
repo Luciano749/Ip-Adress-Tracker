@@ -1,0 +1,99 @@
+.ipArea {
+  height: 30rem;
+  background-image: url(../image/pattern-bg.png);
+  background-size: cover;
+  background-position: center;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.inputContainer {
+  margin-top: 4rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.inputContainer h1 {
+  font-size: 4rem;
+  color: white;
+
+  margin-bottom: 2rem;
+}
+
+.inputArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.inputArea input {
+  width: 70rem;
+  height: 6rem;
+
+  font-size: 2.5rem;
+
+  border-radius: 1.5rem 0rem 0rem 1.5rem;
+  padding: 2rem;
+}
+
+.inputArea button {
+  height: 100%;
+  width: 5rem;
+  background-color: black;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  border-radius: 0rem 1.5rem 1.5rem 0rem;
+}
+
+/* -- RESPONSIVE -- */
+
+@media only screen and (max-width: 600px) {
+  .inputContainer h1 {
+    font-size: 2.8rem;
+  }
+
+  .inputArea input {
+    width: 22rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .inputArea input {
+    width: 50rem;
+  }
+}

@@ -1,0 +1,97 @@
+.IpInformations {
+  width: 100rem;
+  background-color: rgb(255, 255, 255);
+
+  margin: auto;
+  padding: 2rem;
+
+  position: absolute;
+  bottom: -6rem;
+  left: 50%;
+
+  z-index: 500;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  border-radius: 4rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.information {
+  padding: 2rem 3rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.information h4 {
+  font-size: 1.5rem;
+
+  opacity: 0.6;
+}
+
+.information h2 {
+  font-size: 1.8rem;
+}
+
+/* -- RESPONSIVE -- */
+
+@media only screen and (max-width: 600px) {
+  .IpInformations {
+    width: 25rem;
+    bottom: -14rem;
+  }
+
+  .information {
+    width: 20rem;
+
+    padding: 1rem;
+
+    -webkit-box-align: center;
+
+    -ms-flex-align: center;
+
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .IpInformations {
+    width: 55rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .IpInformations {
+    width: 75rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .IpInformations {
+    width: 95rem;
+  }
+}
